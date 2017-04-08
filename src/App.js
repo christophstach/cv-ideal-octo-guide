@@ -1,7 +1,7 @@
 import React from 'react';
+
+import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/js/bootstrap.js';
-import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 import 'fontawesome';
 
 import './App.css';
