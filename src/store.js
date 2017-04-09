@@ -1,54 +1,21 @@
 
-const workingExperience = {
-  title: 'Working experience',
-  employers: [
-    {
-      name: 'SLH GmbH',
-      location: '48465 Schüttorf',
-      dateStart: new Date(),
-      dateEnd: null,
-      projects: [
+import { applyMiddleware, createStore, combineReducers } from 'redux';
+import logger from 'redux-logger';
 
-      ],
-      mainTasks: [
-        {
-          description: ''
-        }
-      ],
-      additionalTasks: [
-        {
-          description: ''
-        }
-      ]
-    }
-  ]
-};
+import workingExperience from './workingExperience.reducer';
+import educationalBackground from './educationalBackground.reducer';
+import certifaces from './certifaces.reducer';
+import addtitionalSkills from './addtitionalSkills.reducer';
 
-const educationalBackground = {
-  title: 'Educational background',
-  schools: [
-    {
-      name: 'Hochschule für Technik & Wirtschaft',
-      location: 'Berlin',
-      dateStart: new Date(),
-      dateEnd: null
-    }
-  ]
-};
+const store = createStore(
+  combineReducers({
+    workingExperience,
+    educationalBackground,
+    certifaces,
+    addtitionalSkills
+  }),
+  applyMiddleware(logger)
+);
 
-const certificates = {
-  
-};
-
-const additionalInformation = {
-
-};
-
-const store = {
-  workingExperience,
-  educationalBackground,
-  certificates,
-  additionalInformation
-};
 
 export default store;

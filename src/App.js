@@ -1,4 +1,5 @@
 import React from 'react';
+import { Provider } from 'react-redux';
 
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -9,33 +10,27 @@ import './App.css';
 import Navigation from './Navigation';
 import ProfilePicture from './ProfilePicture';
 import WorkExperience from './WorkExperience';
+import EducationalBackground from './EducationalBackground';
+
+import store from './store';
 
 
 const App = () => (
-  <div>
-    <Navigation/>
+  <Provider store={store}>
+    <div className="App">
 
-    <ProfilePicture/>
+      <Navigation/>
 
-    <div className="content-wrapper">
-      <div className="content">
-        
-        
-        <div>
-
-          
-          <br/>
-
-          <h3>Educational background</h3>
-          
-          <WorkExperience/>
-
-
-        </div>
-      </div>  
+      <div className="container">
+          <ProfilePicture/>
+          <hr/>
+          <WorkExperience/> 
+          <hr/>
+          <EducationalBackground/>
+      </div>    
     </div>
-    
-  </div>
+  
+  </Provider>
 );
 
 export default App;

@@ -1,29 +1,4 @@
 
-.profile-picture-wrapper {
-  display: flex;
-  justify-content: center;
-  
-}
-
-
-.profile-picture-wrapper {
-  
-  
-}
-
-.profile-picture > img {
-  width: 400px;
-}
-
-.content-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.content {
-  width: 50%;
-}
-
 body {
   padding-top: 100px;
 }
