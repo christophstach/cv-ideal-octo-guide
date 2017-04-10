@@ -45,8 +45,8 @@ const App = () => (
       
       <div className="site py-4 projects">
         <div className="container">
-          <span>Just watch my </span>
-          <a href="https://github.com/christophstach">GitGub <i className="fa fa-github" aria-hidden="true"></i></a>! 
+          <span>Just see my </span>
+          <a href="https://github.com/christophstach"><i className="fa fa-github" aria-hidden="true"></i></a>! 
         </div>
       </div>
       
