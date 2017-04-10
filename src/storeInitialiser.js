@@ -10,7 +10,7 @@ import { additionalSkillsInitialState } from './AdditionalSkills';
  * @param {*} store 
  */
 const slowlyInitStore = (store) => {
-  const time = 500;
+  const time = 0;
 
   return Observable
     .interval(time)

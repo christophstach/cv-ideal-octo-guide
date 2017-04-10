@@ -55,7 +55,7 @@ const initialState = [
   }
 ];
 
-const additionalSkills = (state = [], action) => {
+const additionalSkills = (state = initialState, action) => {
   switch(action.type) {
     case 'ADD_ADDITIONAL_SKILL': {
       return [

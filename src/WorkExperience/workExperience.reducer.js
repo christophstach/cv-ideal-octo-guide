@@ -61,7 +61,7 @@ const initialState = [
   }
 ];
 
-const workExperience = (state = [], action) => {
+const workExperience = (state = initialState, action) => {
   switch(action.type) {
     case 'ADD_WORK_EXPERIENCE': {
       return [

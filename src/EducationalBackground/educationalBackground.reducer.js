@@ -29,7 +29,7 @@ const initialState = [
   }
 ];
 
-const educationalBackground = (state = [], action) => {
+const educationalBackground = (state = initialState, action) => {
   switch(action.type) {
     case 'ADD_EDUCATIONAL_BACKGROUND': {
       return [

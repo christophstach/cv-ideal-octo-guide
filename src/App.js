@@ -17,7 +17,7 @@ import Certificates from './Certificates';
 
 import store from './store';
 
-const animation = "bounceInDown";
+const animation = "";
 
 const App = () => (
   <Provider store={store}>

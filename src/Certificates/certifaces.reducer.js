@@ -7,7 +7,7 @@ const initialState = [
 ];
 
 
-const certifaces = (state = [], action) => {
+const certifaces = (state = initialState, action) => {
   switch(action.type) {
     case 'ADD_CERTIFICATE': {
       return [
