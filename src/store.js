@@ -2,6 +2,8 @@
 import { applyMiddleware, createStore, combineReducers } from 'redux';
 import logger from 'redux-logger';
 
+import { initStore, slowlyInitStore } from './storeInitialiser';
+
 import { workExperienceReducer as workExperience } from './WorkExperience';
 import { educationalBackgroundReducer as educationalBackground } from './EducationalBackground';
 import { certificatesReducer as certificates } from './Certificates';
@@ -17,5 +19,7 @@ const store = createStore(
   applyMiddleware(logger)
 );
 
+
+slowlyInitStore(store);
 
 export default store;

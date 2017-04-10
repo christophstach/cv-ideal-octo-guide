@@ -7,8 +7,26 @@ const initialState = [
 ];
 
 
-const certifaces = (state = initialState, action) => {
-  return state;
+const certifaces = (state = [], action) => {
+  switch(action.type) {
+    case 'ADD_CERTIFICATE': {
+      return [
+        ...state,
+        {
+          ...action.payload
+        }
+      ];
+    }
+    default: {
+      return state;    
+    }
+  }
+  
 };
+
+export {
+  initialState
+};
+
 
 export default certifaces;

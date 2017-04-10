@@ -1,8 +1,9 @@
-import educationalBackgroundReducer from './educationalBackground.reducer';
-import educationalBackground from './EducationalBackground';
+import educationalBackgroundReducer, { initialState as educationalBackgroundInitialState } from './educationalBackground.reducer';
+import EducationalBackground from './EducationalBackground';
 
 export {
-  educationalBackgroundReducer
+  educationalBackgroundReducer,
+  educationalBackgroundInitialState
 };
 
-export default educationalBackground;
+export default EducationalBackground;

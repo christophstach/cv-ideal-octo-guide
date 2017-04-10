@@ -1,8 +1,10 @@
-import additionalSkillsReducer from './additionalSkills.reducer';
+import additionalSkillsReducer, { initialState as additionalSkillsInitialState } from './additionalSkills.reducer';
 import AdditionalSkills from './AdditionalSkills'
 
+
 export {
-  additionalSkillsReducer
+  additionalSkillsReducer,
+  additionalSkillsInitialState
 };
 
 export default AdditionalSkills;

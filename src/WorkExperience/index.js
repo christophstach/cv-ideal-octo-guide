@@ -1,8 +1,9 @@
-import workExperienceReducer from './workExperience.reducer';
-import workExperience from './WorkExperience';
+import workExperienceReducer, { initialState as workExperienceInitialState } from './workExperience.reducer';
+import WorkExperience from './WorkExperience';
 
 export {
-  workExperienceReducer
+  workExperienceReducer,
+  workExperienceInitialState
 };
 
-export default workExperience;
+export default WorkExperience;

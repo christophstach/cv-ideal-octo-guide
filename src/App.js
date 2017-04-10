@@ -3,7 +3,8 @@ import { Provider } from 'react-redux';
 
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
-import 'fontawesome';
+import 'font-awesome/css/font-awesome.css';
+import 'animate.css';
 
 import './App.css';
 
@@ -23,9 +24,14 @@ const App = () => (
 
       <Navigation/>
 
-      <div className="container">
+      <div className="site py-4">
+        <div className="container">
           <ProfilePicture/>
-          <hr/>
+        </div>
+      </div>
+      
+      <div className="site py-4 curriculum-vitea">
+        <div className="container">
           <WorkExperience/> 
           <hr/>
           <EducationalBackground/>
@@ -33,7 +39,16 @@ const App = () => (
           <Certificates/>
           <hr/>
           <AdditionalSkills/>
-      </div>    
+        </div>
+      </div>
+      
+      <div className="site py-4 projects">
+        <div className="container">
+          <span>Just watch my </span>
+          <a href="https://github.com/christophstach">GitGub <i className="fa fa-github" aria-hidden="true"></i></a>! 
+        </div>
+      </div>
+      
     </div>
   
   </Provider>

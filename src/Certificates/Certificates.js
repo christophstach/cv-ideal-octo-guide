@@ -7,7 +7,7 @@ const Certificates = (props) => (
     <h3>Certificates</h3>
     {
       props.items.map((certificate, index) => (
-        <div key={index} className="row mb-2">
+        <div key={index} className="row mb-2 animated fadeIn">
           <div className="col-md-3">
             {moment(certificate.date).format('YYYY')}
           </div>

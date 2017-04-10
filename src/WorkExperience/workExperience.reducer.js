@@ -61,8 +61,24 @@ const initialState = [
   }
 ];
 
-const workExperience = (state = initialState, action) => {
-  return state;
-}
+const workExperience = (state = [], action) => {
+  switch(action.type) {
+    case 'ADD_WORK_EXPERIENCE': {
+      return [
+        ...state,
+        {
+          ...action.payload
+        }
+      ];
+    }
+    default: {
+      return state;
+    }
+  }
+};
+
+export {
+  initialState
+};
 
 export default workExperience;

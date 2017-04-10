@@ -1,6 +1,6 @@
 
 body {
-  padding-top: 100px;
+  padding-top: 56px;
 }
 
 table > tbody > tr > td {
@@ -10,4 +10,21 @@ table > tbody > tr > td {
 h3 {
   /*border-bottom-width: 1px;
   border-bottom-style: solid;*/
+}
+
+.site:nth-child(even) {
+  background-color: #e3f2fd;
+}
+
+.site:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.fade-in-appear {
+  opacity: 0.01;
+}
+
+.fade-in-appear.fade-in-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
 }

@@ -5,9 +5,10 @@ import moment from 'moment';
 const EducationalBackground = (props) => (
   <div>
     <h3>Educational background</h3>
+  
     {
       props.items.map((item, index) => (
-        <div key={index} className="row mb-2">
+        <div key={index} className="row mb-2 animated fadeIn">
           <div className="col-md-3">
             <strong>
               {moment(item.startDate).format('YYYY')}
@@ -21,6 +22,7 @@ const EducationalBackground = (props) => (
         </div>
       ))
     }
+    
   </div>
 );
 

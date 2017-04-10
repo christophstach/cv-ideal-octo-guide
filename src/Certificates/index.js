@@ -1,8 +1,9 @@
-import certificatesReducer from './certifaces.reducer';
+import certificatesReducer, { initialState as certificatesInitialState } from './certifaces.reducer';
 import Certifaces from './Certificates';
 
 export {
-  certificatesReducer
+  certificatesReducer,
+  certificatesInitialState
 };
 
 export default Certifaces;

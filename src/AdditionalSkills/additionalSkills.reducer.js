@@ -55,8 +55,24 @@ const initialState = [
   }
 ];
 
-const additionalSkills = (state = initialState, action) => {
-  return state
+const additionalSkills = (state = [], action) => {
+  switch(action.type) {
+    case 'ADD_ADDITIONAL_SKILL': {
+      return [
+        ...state,
+        {
+          ...action.payload
+        }   
+      ];
+    }
+    default: {
+      return state;  
+    }
+  }
+};
+
+export {
+  initialState
 };
 
 export default additionalSkills;

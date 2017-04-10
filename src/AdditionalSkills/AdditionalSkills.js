@@ -6,7 +6,7 @@ const AdditionalSkills = (props) => (
     <h3>Additional skills</h3>
     {
       props.items.map((skill, index) => (
-        <div key={index} className="row mb-2">
+        <div key={index} className="row mb-2 animated fadeIn">
           <div className="col-md-3">
             {skill.category}
           </div>
@@ -37,7 +37,6 @@ const AdditionalSkills = (props) => (
 );
 
 const mapStateToProps = (state, ownProps) => {
-  console.log(state);
   return {
     items: state.additionalSkills
   };

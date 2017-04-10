@@ -29,8 +29,25 @@ const initialState = [
   }
 ];
 
-const educationalBackground = (state = initialState, action) => {
-  return state;
+const educationalBackground = (state = [], action) => {
+  switch(action.type) {
+    case 'ADD_EDUCATIONAL_BACKGROUND': {
+      return [
+        ...state,
+        {
+          ...action.payload
+        }
+      ];
+    }
+    default: {
+      return state;
+    }
+  }
+  
+};
+
+export {
+  initialState
 };
 
 export default educationalBackground;
