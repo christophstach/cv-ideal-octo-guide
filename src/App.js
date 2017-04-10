@@ -11,6 +11,8 @@ import Navigation from './Navigation';
 import ProfilePicture from './ProfilePicture';
 import WorkExperience from './WorkExperience';
 import EducationalBackground from './EducationalBackground';
+import AdditionalSkills from './AdditionalSkills';
+import Certificates from './Certificates';
 
 import store from './store';
 
@@ -27,6 +29,10 @@ const App = () => (
           <WorkExperience/> 
           <hr/>
           <EducationalBackground/>
+          <hr/>
+          <Certificates/>
+          <hr/>
+          <AdditionalSkills/>
       </div>    
     </div>
   

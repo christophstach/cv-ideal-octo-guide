@@ -1,6 +1,8 @@
-import addtitionalSkillsReducer from './addtitionalSkills.reducer';
-
+import additionalSkillsReducer from './additionalSkills.reducer';
+import AdditionalSkills from './AdditionalSkills'
 
 export {
-  addtitionalSkillsReducer
+  additionalSkillsReducer
 };
+
+export default AdditionalSkills;
