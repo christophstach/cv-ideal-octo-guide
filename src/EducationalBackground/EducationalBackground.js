@@ -1,17 +1,18 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import moment from 'moment';
 
 const EducationalBackground = (props) => (
   <div>
     <h3>Educational background</h3>
     {
       props.items.map((item, index) => (
-        <div key={index} className="row">
+        <div key={index} className="row mb-2">
           <div className="col-md-3">
             <strong>
-              {item.startDate.getFullYear()}
+              {moment(item.startDate).format('YYYY')}
               {typeof(item.endDate) === 'string' ? ' - ' + item.endDate : null}
-              {item.endDate instanceof Date ? ' - ' + item.endDate.getFullYear(): null}
+              {item.endDate instanceof Date ? ' - ' + moment(item.endDate).format('YYYY') : null}
             </strong>    
           </div>
           <div className="col-md-9">
@@ -24,7 +25,6 @@ const EducationalBackground = (props) => (
 );
 
 const mapStateToProps = (state, ownProps) => {
-  console.log(state.educationalBackground);
   return {
     items: state.educationalBackground
   };

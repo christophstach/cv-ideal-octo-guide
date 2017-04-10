@@ -4,14 +4,14 @@ const initialState = [
     position: 'Frontend software engineer (working student)',
     location: 'Berlin, Germany',
     startDate: new Date(2016, 11),
-    dateEnd: 'present'
+    endDate: 'present'
   },
   {
     name: 'Working holiday',
     position: '',
     location: 'Mainly in Perth Australia',
     startDate: new Date(2014, 10),
-    dateEnd: new Date(12, 2015)
+    endDate: new Date(2015, 12)
   },
   {
     name: 'SLH GmbH',
@@ -36,8 +36,8 @@ const initialState = [
   }
 ];
 
-const workingExperience = (state = initialState, action) => {
+const workExperience = (state = initialState, action) => {
   return state;
 }
 
-export default workingExperience;
+export default workExperience;

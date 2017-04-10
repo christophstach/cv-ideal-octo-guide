@@ -2,16 +2,16 @@
 import { applyMiddleware, createStore, combineReducers } from 'redux';
 import logger from 'redux-logger';
 
-import workingExperience from './workingExperience.reducer';
-import educationalBackground from './educationalBackground.reducer';
-import certifaces from './certifaces.reducer';
-import addtitionalSkills from './addtitionalSkills.reducer';
+import { workExperienceReducer as workExperience } from './WorkExperience';
+import { educationalBackgroundReducer as educationalBackground } from './EducationalBackground';
+import { certificatesReducer as certificates } from './Certificates';
+import { addtitionalSkillsReducer as addtitionalSkills } from './AdditionalSkills';
 
 const store = createStore(
   combineReducers({
-    workingExperience,
+    workExperience,
     educationalBackground,
-    certifaces,
+    certificates,
     addtitionalSkills
   }),
   applyMiddleware(logger)
