@@ -17,6 +17,7 @@ import Certificates from './Certificates';
 
 import store from './store';
 
+const animation = "bounceInDown";
 
 const App = () => (
   <Provider store={store}>
@@ -32,13 +33,13 @@ const App = () => (
       
       <div className="site py-4 curriculum-vitea">
         <div className="container">
-          <WorkExperience/> 
+          <WorkExperience animation={animation}/> 
           <hr/>
-          <EducationalBackground/>
+          <EducationalBackground animation={animation}/>
           <hr/>
-          <Certificates/>
+          <Certificates animation={animation}/>
           <hr/>
-          <AdditionalSkills/>
+          <AdditionalSkills animation={animation}/>
         </div>
       </div>
       

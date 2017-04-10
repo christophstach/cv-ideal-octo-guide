@@ -20,7 +20,7 @@ const initStore = (store) => {
  * @param {*} store 
  */
 const slowlyInitStore = (store) => {
-  const time = 250;
+  const time = 500;
 
   return Observable
     .interval(time)

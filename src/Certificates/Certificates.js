@@ -7,7 +7,7 @@ const Certificates = (props) => (
     <h3>Certificates</h3>
     {
       props.items.map((certificate, index) => (
-        <div key={index} className="row mb-2 animated fadeIn">
+        <div key={index} className={['row', 'mb-2', 'animated', props.animation].join(' ')}>
           <div className="col-md-3">
             {moment(certificate.date).format('YYYY')}
           </div>
@@ -22,7 +22,8 @@ const Certificates = (props) => (
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    items: state.certificates
+    items: state.certificates,
+    ...ownProps
   };
 }
 

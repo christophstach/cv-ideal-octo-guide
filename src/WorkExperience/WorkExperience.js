@@ -7,7 +7,7 @@ const WorkExperience = (props) => (
     <h3>Work experience</h3>
     {
       props.items.map((assignment, index) => (
-        <div key={index} className="row mb-2 animated fadeIn">
+        <div key={index} className={['row', 'mb-2', 'animated', props.animation].join(' ')}>
           <div className="col-md-3">
             <strong>
               {moment(assignment.startDate).format('MM.YYYY')}
@@ -38,7 +38,8 @@ const WorkExperience = (props) => (
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    items: state.workExperience
+    items: state.workExperience,
+    ...ownProps
   };
 }
 

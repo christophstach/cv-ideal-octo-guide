@@ -6,7 +6,7 @@ const AdditionalSkills = (props) => (
     <h3>Additional skills</h3>
     {
       props.items.map((skill, index) => (
-        <div key={index} className="row mb-2 animated fadeIn">
+        <div key={index} className={['row', 'mb-2', 'animated', props.animation].join(' ')}>
           <div className="col-md-3">
             {skill.category}
           </div>
@@ -38,7 +38,8 @@ const AdditionalSkills = (props) => (
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    items: state.additionalSkills
+    items: state.additionalSkills,
+    ownProps
   };
 }
 

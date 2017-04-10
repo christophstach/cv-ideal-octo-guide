@@ -8,7 +8,7 @@ const EducationalBackground = (props) => (
   
     {
       props.items.map((item, index) => (
-        <div key={index} className="row mb-2 animated fadeIn">
+        <div key={index} className={['row', 'mb-2', 'animated', props.animation].join(' ')}>
           <div className="col-md-3">
             <strong>
               {moment(item.startDate).format('YYYY')}
@@ -28,7 +28,8 @@ const EducationalBackground = (props) => (
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    items: state.educationalBackground
+    items: state.educationalBackground,
+    ...ownProps
   };
 }
 
