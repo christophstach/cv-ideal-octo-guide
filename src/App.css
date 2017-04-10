@@ -28,3 +28,18 @@ h3 {
   opacity: 1;
   transition: opacity .5s ease-in;
 }
+
+.bg-custom {
+  background-color: #3498db;
+}
+
+.footer {
+  background-color: #3498db;
+  display: flex;
+  font-size: 2em;
+  justify-content: center;
+}
+
+.footer a {
+  color: #ffffff;
+}

@@ -25,11 +25,11 @@ const App = () => (
 
       <Navigation/>
 
-      <div className="site py-4">
+      <header className="site py-4">
         <div className="container">
           <ProfilePicture/>
         </div>
-      </div>
+      </header>
       
       <div className="site py-4 curriculum-vitea">
         <div className="container">
@@ -42,14 +42,10 @@ const App = () => (
           <AdditionalSkills animation={animation}/>
         </div>
       </div>
-      
-      <div className="site py-4 projects">
-        <div className="container">
-          <span>Just see my </span>
-          <a href="https://github.com/christophstach"><i className="fa fa-github" aria-hidden="true"></i></a>! 
-        </div>
-      </div>
-      
+
+      <footer className="footer py-4">
+        <a href="https://github.com/christophstach"><i className="fa fa-github" aria-hidden="true"></i></a>
+      </footer>
     </div>
   
   </Provider>

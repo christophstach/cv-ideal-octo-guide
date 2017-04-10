@@ -2,7 +2,7 @@ import React from 'react';
 
 
 const Navigation = () => (
-  <nav className="navbar navbar-toggleable-md navbar-light bg-faded fixed-top">
+  <nav className="navbar navbar-toggleable-md navbar-inverse bg-custom fixed-top">
     <button 
       className="navbar-toggler navbar-toggler-right"
       type="button"
@@ -20,9 +20,6 @@ const Navigation = () => (
       <ul className="navbar-nav">
         <li className="nav-item active">
           <a className="nav-link" href="#">Curriculum Vitae <span className="sr-only">(current)</span></a>
-        </li> 
-        <li className="nav-item">
-          <a className="nav-link" href="#">Projects</a>
         </li>
       </ul>
     </div>
