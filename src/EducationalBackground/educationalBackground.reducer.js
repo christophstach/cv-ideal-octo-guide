@@ -11,7 +11,7 @@ const initialState = [
     programm: ' IT Management Assistent',
     location: 'Nordhorn, Germany',
     startDate: new Date(2009, 8),
-    endDate: new Date(2011, 6),
+    endDate: new Date(2011, 6)
   },
   {
     name: 'Berufskolleg Rheine',
@@ -43,7 +43,7 @@ const educationalBackground = (state = initialState, action) => {
       return state;
     }
   }
-  
+
 };
 
 export {

@@ -5,15 +5,15 @@ const initialState = [
     items: [
       {
         name: 'German',
-        level: 'native speaker',
+        level: 'native speaker'
       },
       {
         name: 'English',
-        level: 'fluent',
+        level: 'fluent'
       },
       {
         name: 'Spanish',
-        level: 'basic knowlodge',
+        level: 'basic knowlodge'
       }
     ]
   },
@@ -23,7 +23,7 @@ const initialState = [
       {
         category: 'Frontend',
         items: [
-          'Angularjs', 'Angular', 'ReactJS + Redux', 
+          'Angularjs', 'Angular', 'ReactJS + Redux',
           'Vue.js + Vuex', 'Bootstrap 3 & 4', 'Sencha ExtJS',
           'HTML5, JavaScript, CSS3', 'jQuery', 'Less', 'Sass'
         ]
@@ -32,7 +32,7 @@ const initialState = [
         category: 'Backend',
         items: [
           'PHP', 'Symfony', 'Doctrine', 'Zend Framework 2',
-          'C#', 'ASP.NET MVC', 'ASP.NET Web API', 'RESTful Web Services', 
+          'C#', 'ASP.NET MVC', 'ASP.NET Web API', 'RESTful Web Services',
           'Entity Framework', 'MVC'
         ]
       },
@@ -40,7 +40,7 @@ const initialState = [
         category: 'Server',
         items: [
           'Linux', 'Windows', 'MySQL',
-          'MS SQL Server', 'Apache 2', 'nginx',
+          'MS SQL Server', 'Apache 2', 'nginx'
         ]
       },
       {
@@ -62,11 +62,11 @@ const additionalSkills = (state = initialState, action) => {
         ...state,
         {
           ...action.payload
-        }   
+        }
       ];
     }
     default: {
-      return state;  
+      return state;
     }
   }
 };
